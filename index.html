@@ -7,6 +7,10 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Contact form</title>
@@ -14,37 +18,47 @@
 
 <body>
 
-  <main class="formContent">
-    <h1>Contact Us</h1>
-    <form action="#" method="post">
-
-      <div class="nameField">
-        <p> First Name *</p>
-        <input type="text" name="firstName" placeholder="This field is required" required>
-        <p> Last Name *</p>
-        <input type="text" name="lastName" placeholder="This field is required" required>
+  <div class="wrapper">
+    <main class="formContent">
+      <div class="formTextTest">
+        <h1>Contact Us</h1>
       </div>
+      <form action="#" method="post">
 
-      <p>Email Address *</p>
-      <input type="email" name="email" placeholder="This field is required" required>
+        <div class="nameField">
+          <p> First Name *</p>
+          <input type="text" name="firstName" required>
+          <p> Last Name *</p>
+          <input type="text" name="lastName" required>
+        </div>
 
-      <div class="radioField">
-        <p>Query Type *</p>
-        <input type="radio"> General Enquiry
-        <input type="radio"> Support Request
-      </div>
+        <p>Email Address *</p>
+        <input type="email" name="email" placeholder="email@example.com" required>
+
+        <div class="radioField">
+          <p>Query Type *</p>
+          <div class="radioBox"><input type="radio" name="radio" checked>
+            <p id="paragraphRadio">General Enquiry</p>
+          </div>
+          <div class="radioBox"> <input type="radio" name="radio">
+            <p id="paragraphRadio">Support Request</p>
+          </div>
 
 
-      <input type="text" width="300px" height="300px">
-      <br>
+        </div>
 
-      <input type="checkbox" name="check" id=""> i consent to being contacted by the team *
-    </form>
+        <p>Message *</p>
+        <input type="text" class="inputMessage">
+        <br>
 
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+        <div class="checkTerm">
+          <input type="checkbox" name="checkTerm" > 
+          <p id="checkTermParagraph">i consent to being contacted by the team *</p>
+        </div>
+      </form>
+
+    </main>
+  
   </div>
 </body>
 
