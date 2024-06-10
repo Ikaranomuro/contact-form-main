@@ -1,22 +1,23 @@
 /*=======================GLOBAL=====================*/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
 }
 
-:root{
-font-size: 62.5%; /* 1rem = 10px*/
+:root {
+  font-size: 62.5%;
+  /* 1rem = 10px*/
 
---primary_color_green_200:hsl(148,38%,91%);
---primary_color_green_600:hsl(169,82%,27%);
---primary_color_red:hsl(0,66%,54%);
---neutral_color_white:hsl(0,0%,100%);
---neutral_color_grey:hsl(186,15%,59%);
---neutral_color_grey:hsl(187,24%,22%);
+  --primary_color_green_200: hsl(148, 38%, 91%);
+  --primary_color_green_600: hsl(169, 82%, 27%);
+  --primary_color_red: hsl(0, 66%, 54%);
+  --neutral_color_white: hsl(0, 0%, 100%);
+  --neutral_color_grey: hsl(186, 15%, 59%);
+  --neutral_color_grey: hsl(187, 24%, 22%);
 
-/*FONT
+  /*FONT
 // <uniquifier>: Use a unique and descriptive class name
 // <weight>: Use a value from 200 to 800
 
@@ -30,7 +31,7 @@ font-size: 62.5%; /* 1rem = 10px*/
 
 }
 
-body{
+body {
   width: 100%;
   height: 92rem;
   display: flex;
@@ -39,8 +40,9 @@ body{
   background-color: var(--primary_color_green_200);
 
 }
+
 /*=======================WRAPPER=====================*/
-.wrapper{
+.wrapper {
   width: min(37.5rem, 100%);
   padding: 1.25rem;
 }
@@ -48,25 +50,26 @@ body{
 
 /*=======================FORMCONTENT=====================*/
 
-.wrapper .formContent{
+.wrapper .formContent {
   width: 35rem;
   padding: 2rem;
   background-color: var(--neutral_color_white);
   border-radius: 1.5rem;
 }
 
-.formContent .formTextTest{
+.formContent .formTextTest {
   width: 100%;
   text-align: start;
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+  font-size: 1.4rem;
   color: var(--neutral_color_grey);
   margin-bottom: 2rem;
 }
 
-.formContent p{
+.formContent p {
   font-size: 1.6rem;
   text-align: start;
   font-family: "Karla", sans-serif;
@@ -79,25 +82,25 @@ body{
 
 /*=======================NAMEFIELD=====================*/
 
-.formContent .nameField input{
-width: 100%;
-height: 4.5rem;
-padding-left: 1rem;
-border-radius: 1rem;
-border: solid 1px var(--primary_color_green_600);
+.formContent .nameField input {
+  width: 100%;
+  height: 4.5rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: solid 1px var(--primary_color_green_600);
 }
 
 /*=======================INPUT-EMAIL=====================*/
-.formContent input[type="email"]{
-width: 100%;
-height: 4.5rem;
-padding-left: 1rem;
-border-radius: 1rem;
-border: solid 1px var(--primary_color_green_600);
+.formContent input[type="email"] {
+  width: 100%;
+  height: 4.5rem;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  border: solid 1px var(--primary_color_green_600);
 }
 
 /*=======================RADIOFIELD=====================*/
-.formContent .radioField .radioBox{
+.formContent .radioField .radioBox {
   width: 100%;
   height: 4.5rem;
   padding-left: 1rem;
@@ -110,21 +113,21 @@ border: solid 1px var(--primary_color_green_600);
 }
 
 .radioBox input {
-margin-right: 0.5rem;
-margin-left: 1rem;
-width: 2rem;
-height: 2rem;
+  margin-right: 0.5rem;
+  margin-left: 1rem;
+  width: 2rem;
+  height: 2rem;
 
 }
 
-.radioBox #paragraphRadio{
+.radioBox #paragraphRadio {
   color: var(--neutral_color_grey);
-  
+
 }
 
 /*=======================RADIOFIELD=====================*/
 
-.wrapper .formContent .inputMessage{
+.wrapper .formContent .inputMessage {
   width: 100%;
   height: 20rem;
   padding-left: 1rem;
@@ -133,14 +136,14 @@ height: 2rem;
 }
 
 /*=======================CHECKTERM=====================*/
-.formContent .checkTerm{
+.formContent .checkTerm {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 10rem;
 }
 
-.formContent .checkTerm input{
+.formContent .checkTerm input {
   width: 2rem;
   height: 2rem;
 }
@@ -150,4 +153,23 @@ height: 2rem;
   font-size: 1.6rem;
   color: var(--neutral_color_grey);
 
+}
+
+/*=======================BUTTON=====================*/
+/* form{
+  display: flex;
+  flex-direction: column;
+} */
+.formContent button {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--neutral_color_white);
+  background-color: var(--primary_color_green_600);
+  border: none;
+  border-radius: 0.5rem;
 }
