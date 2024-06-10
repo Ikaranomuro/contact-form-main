@@ -134,7 +134,7 @@ body {
   padding-inline: 1rem;
   border-radius: 1rem;
   border: solid 1px var(--primary_color_green_600);
-  
+  resize: none;
 }
 /*TROCAR ESSE INPUT POR TEXTAREA, ENTENDER LÓGICA*/
 
