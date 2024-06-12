@@ -88,6 +88,7 @@ body {
   padding-left: 1rem;
   border-radius: 1rem;
   border: solid 1px var(--primary_color_green_600);
+  cursor: pointer;
 }
 
 /*=======================INPUT-EMAIL=====================*/
@@ -97,6 +98,7 @@ body {
   padding-left: 1rem;
   border-radius: 1rem;
   border: solid 1px var(--primary_color_green_600);
+  cursor: pointer;
 }
 
 /*=======================RADIOFIELD=====================*/
@@ -120,9 +122,19 @@ body {
 
 }
 
-.radioBox #paragraphRadio {
+.radioBox label {
   color: var(--neutral_color_grey);
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  cursor: pointer;
 
+}
+
+.radioBox label:active{
+  background-color: var(--primary_color_green_200);
 }
 
 /*=======================INPUTMESSAGE=====================*/
@@ -150,14 +162,24 @@ body {
 .formContent .checkTerm input {
   width: 2rem;
   height: 2rem;
+  margin-right: 2rem;
+  appearance: none;
+  border: 0.1px black solid;
 }
 
-#checkTermParagraph {
-  margin-left: 2rem;
+.formContent .checkTerm input[type="checkbox"]:checked{
+  background: url(/assets/images/icon-checkbox-check.svg) no-repeat;
+}
+
+
+
+.checkTerm label {
   font-size: 1.6rem;
   color: var(--neutral_color_grey);
+  cursor: pointer;
 
 }
+
 
 /*=======================BUTTON=====================*/
 .formContent button {
@@ -172,4 +194,7 @@ body {
   background-color: var(--primary_color_green_600);
   border: none;
   border-radius: 0.5rem;
+  cursor: pointer;
 }
+
+/*=======================RESPONSIVITY=====================*/
