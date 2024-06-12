@@ -112,6 +112,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+ 
+}
+
+.radioBoxActive{
+  background-color: red;
 }
 
 .radioBox input {
@@ -119,7 +124,7 @@ body {
   margin-left: 1rem;
   width: 2rem;
   height: 2rem;
-
+  cursor: pointer;
 }
 
 .radioBox label {
@@ -156,7 +161,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10rem;
+  height: 4rem;
 }
 
 .formContent .checkTerm input {
@@ -196,5 +201,41 @@ body {
   border-radius: 0.5rem;
   cursor: pointer;
 }
+
+/*=======================ERRORS=====================*/
+#nameBorderError1{
+  border: 1px solid var(--primary_color_red);
+}
+
+#nameBorderError2{
+  border: 1px solid var(--primary_color_red);
+}
+
+#emailBorderError{
+  border: 1px solid var(--primary_color_red);
+}
+
+#messsageBorderError{
+  border: 1px solid var(--primary_color_red);
+}
+
+
+span{
+  display: block;
+  font-size: 1.4rem;
+  color: red;
+  margin-top: 1rem;
+}
+
+.errorNameFieldAppear{
+
+}
+.errorEmailFieldAppear{
+
+}
+.errorRadioFieldAppear{
+
+}
+
 
 /*=======================RESPONSIVITY=====================*/

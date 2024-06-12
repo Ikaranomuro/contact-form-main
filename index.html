@@ -16,7 +16,7 @@
   <title>Frontend Mentor | Contact form</title>
 </head>
 
-<body>
+<body onload="loaded()">
 
   <div class="wrapper">
     <main class="formContent">
@@ -27,41 +27,51 @@
 
         <div class="nameField">
           <p> First Name *</p>
-          <input type="text" name="firstName" required>
+          <input type="text" name="firstName" id="nameBorderError1" required>
+          <span class="errorNameField">This field is required</span>
           <p> Last Name *</p>
-          <input type="text" name="lastName" required>
+          <input type="text" name="lastName" id="nameBorderError2" required>
+          <span class="errorNameField">This field is required</span>
         </div>
 
         <p>Email Address *</p>
-        <input type="email" name="email" placeholder="email@example.com" required>
+        <input type="email" name="email" placeholder="email@example.com" id="emailBorderError" required>
+        <span class="errorEmailField">Please enter a valid email address</span>
+
 
         <div class="radioField">
           <p>Query Type *</p>
           <div class="radioBox"><input type="radio" name="radio" id="paragraphRadio1">
-            <label for="paragraphRadio1">General Enquiry</label>
+            <label for="paragraphRadio1" class="take">General Enquiry</label>
           </div>
           <div class="radioBox"> <input type="radio" name="radio" id="paragraphRadio2">
             <label for="paragraphRadio2">Support Request</label>
           </div>
+          <span class="errorRadioField">Please select a query type</span>
 
 
         </div>
 
         <p>Message *</p>
-        <textarea name="" id="" class="inputMessage" maxlength="390" rows="10" cols="50" required></textarea>
+        <textarea name="" class="inputMessage" maxlength="390" rows="10" cols="50" id="messsageBorderError"  required></textarea>
+        <span class="errorNameField">This field is required</span>
         <br>
 
         <div class="checkTerm">
-          <input type="checkbox" name="checkTerm" maxlength="2" id="checkTermParagraph" required> 
+          <input type="checkbox" name="checkTerm" maxlength="2" id="checkTermParagraph" required>
           <label for="checkTermParagraph">i consent to being contacted by the team *</label>
         </div>
+        <span class="errorNameField">To submit this form, please consent to being contacted</span>
+
 
         <button> Submit </button>
       </form>
 
     </main>
-  
+
   </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
