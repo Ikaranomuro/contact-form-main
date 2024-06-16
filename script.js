@@ -33,7 +33,6 @@
 
 
 
-
 // function loaded(){
  
 //     const a = document.getElementById('paragraphRadio1')
