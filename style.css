@@ -55,7 +55,6 @@ body {
   padding: 2rem;
   background-color: var(--neutral_color_white);
   border-radius: 1.5rem;
-  margin-top: 7rem;
 }
 
 .formContent .formContactUs{
@@ -201,6 +200,10 @@ body {
   color: var(--neutral_color_grey);
   cursor: pointer;
   width: 22rem;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 
 
 }
@@ -264,6 +267,85 @@ span{
 }
 
 
-
-
 /*=======================RESPONSIVITY=====================*/
+@media(max-width:360px){
+  /*=======================WAPPER=====================*/
+  
+  .wrapper {
+    width: min(36rem, 100%);
+  }
+  
+  /*=======================FORMCONTENT=====================*/
+  
+  .wrapper .formContent {
+    width: 33rem;
+  }
+  
+}
+  
+
+
+@media(min-width:768px){
+
+/*=======================BODY=====================*/
+body {
+  height: 90rem;
+}
+
+/*=======================WAPPER=====================*/
+
+.wrapper {
+  width: min(76.8rem, 100%);
+}
+
+/*=======================FORMCONTENT=====================*/
+
+.wrapper .formContent {
+  width: 74rem;
+}
+
+/*=======================NAMEFIELD=====================*/
+
+.formContent .nameField{
+display: flex;
+justify-content: space-between;
+}
+
+.formContent .nameField input {
+  width: 34.5rem;
+}
+
+/*=======================RADIOFIELD=====================*/
+.formContent .radioField{
+  display: flex;
+  justify-content: space-between;
+}
+
+.formContent .radioField .radioBox {
+  width: 34.5rem;
+}
+
+/*=======================INPUTMESSAGE=====================*/
+
+.wrapper .formContent .inputMessage {
+  width: 100%;
+  padding-block: 2rem;
+  padding-inline: 1rem;
+  border-radius: 1rem;
+  border: solid 1px var(--neutral_color_grey);  resize: none;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ 
+  
+}
+
+.checkTerm label {
+  font-size: 1.7rem;
+  width: 35rem;
+
+
+}
+
+}
