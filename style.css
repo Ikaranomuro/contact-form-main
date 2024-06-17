@@ -191,7 +191,7 @@ body {
 }
 
 .formContent .checkTerm input[type="checkbox"]:checked{
-  background: url(/assets/images/icon-checkbox-check.svg) no-repeat;
+  background: url(./assets/images/icon-checkbox-check.svg) no-repeat;
 }
 
 
