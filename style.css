@@ -125,6 +125,11 @@ body {
   align-items: center; 
 }
 
+.radioBoxChecked{
+  background-color: var(--primary_color_green_200);
+
+}
+
 .radioField .radioBoxChecked{
   background-color: var(--primary_color_green_200);
 }
@@ -135,8 +140,11 @@ body {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
-  background-color: aqua;
   accent-color: var(--primary_color_green_600);
+}
+
+.radioBox:has(:checked){
+ background-color: var(--primary_color_green_200);
 }
 
 .radioBox label {
@@ -157,14 +165,16 @@ body {
 .wrapper .formContent .inputMessage {
   width: 100%;
   padding-block: 2rem;
-  padding-inline: 1rem;
   border-radius: 1rem;
   border: solid 1px var(--neutral_color_grey);  resize: none;
   font-family: "Karla", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
- 
+  color: var(--primary_color_green_600);
+  
+  
+  
   
 }
 
@@ -328,17 +338,7 @@ justify-content: space-between;
 /*=======================INPUTMESSAGE=====================*/
 
 .wrapper .formContent .inputMessage {
-  width: 100%;
-  padding-block: 2rem;
-  padding-inline: 1rem;
-  border-radius: 1rem;
-  border: solid 1px var(--neutral_color_grey);  resize: none;
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
- 
-  
+  padding-inline: 2.5rem;
 }
 
 .checkTerm label {

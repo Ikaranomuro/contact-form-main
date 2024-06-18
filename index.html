@@ -16,7 +16,7 @@
   <title>Frontend Mentor | Contact form</title>
 </head>
 
-<body onload="loaded()">
+<body>
 
   <div class="wrapper">
     <main class="formContent">
@@ -46,13 +46,13 @@
           <p>Query Type *</p>
           <div class="radioField">
             <div>
-              <div class="radioBox"> <input type="radio" name="radio" id="paragraphRadio2">
-                <label for="paragraphRadio2">General Enquiry </label>
+              <div class="radioBox"> <input type="radio" name="radio" id="paragraphRadio1" value="Testando1">
+                <label for="paragraphRadio1">General Enquiry </label>
               </div>
             </div>
             <div>
-              <div class="radioBox"><input type="radio" name="radio" id="paragraphRadio1">
-                <label for="paragraphRadio1" class="take">Support Request</label>
+              <div class="radioBox"><input type="radio" name="radio" id="paragraphRadio2" value="Testando2">
+                <label for="paragraphRadio2" class="take">Support Request</label>
               </div>
             </div>
             <span class="errorRadioField">Please select a query type</span>
@@ -62,7 +62,7 @@
         </div>
 
         <p>Message *</p>
-        <textarea name="message" class="inputMessage" maxlength="390" rows="10" cols="50"></textarea>
+        <textarea name="message" class="inputMessage" rows="10" cols="50"></textarea>
         <span class="errorNameField">This field is required</span>
         <br>
 
@@ -74,7 +74,7 @@
 
 
         <button> Submit </button>
-     
+
       </form>
 
     </main>
