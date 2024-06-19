@@ -172,7 +172,7 @@ body {
   font-weight: 700;
   font-style: normal;
   color: var(--primary_color_green_600);
-  
+  padding: 2rem;
   
   
   
@@ -263,7 +263,6 @@ body {
 
 
 span{
-  display: block;
   font-size: 1.4rem;
   color: red;
   margin-top: 1rem;
@@ -272,8 +271,11 @@ span{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  display: none;
-  
+  display: none; 
+}
+
+.spanFlex{
+display: block;
 }
 
 

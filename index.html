@@ -23,57 +23,57 @@
       <div class="formContactUs">
         <h1>Contact Us</h1>
       </div>
-      <form action="#" method="post">
+      <form>
 
         <div class="nameField">
           <div>
             <p> First Name *</p>
-            <input type="text" name="firstName">
-            <span class="errorNameField">This field is required</span>
+            <input type="text" name="firstName" class="firstName">
+            <span class="errorNameField1">This field is required</span>
           </div>
           <div>
             <p> Last Name *</p>
-            <input type="text" name="lastName">
-            <span class="errorNameField">This field is required</span>
+            <input type="text" name="lastName" class="secondName">
+            <span class="errorNameField2">This field is required</span>
           </div>
         </div>
 
         <p>Email Address *</p>
-        <input type="email" name="email">
+        <input type="email" name="email" class="email">
         <span class="errorEmailField">Please enter a valid email address</span>
 
         <div class="radio">
           <p>Query Type *</p>
           <div class="radioField">
             <div>
-              <div class="radioBox"> <input type="radio" name="radio" id="paragraphRadio1" value="Testando1">
+              <div class="radioBox"> <input type="radio" name="radio" class="radioGeneralEnrquiry" value="General Enquiry">
                 <label for="paragraphRadio1">General Enquiry </label>
               </div>
             </div>
             <div>
-              <div class="radioBox"><input type="radio" name="radio" id="paragraphRadio2" value="Testando2">
+              <div class="radioBox"><input type="radio" name="radio" class="radioSupportRequest" value="Support Request">
                 <label for="paragraphRadio2" class="take">Support Request</label>
               </div>
             </div>
-            <span class="errorRadioField">Please select a query type</span>
           </div>
+          <span class="errorRadioField">Please select a query type</span>
 
 
         </div>
 
         <p>Message *</p>
         <textarea name="message" class="inputMessage" rows="10" cols="50"></textarea>
-        <span class="errorNameField">This field is required</span>
+        <span class="errorMessageField">This field is required</span>
         <br>
 
         <div class="checkTerm">
-          <input type="checkbox" name="checkTerm" maxlength="2" id="checkTermParagraph">
+          <input type="checkbox" name="checkTerm" maxlength="2" class="checkbox">
           <label for="checkTermParagraph">i consent to being contacted by the team *</label>
         </div>
-        <span class="errorNameField">To submit this form, please consent to being contacted</span>
+        <span class="errorCheckboxField">To submit this form, please consent to being contacted</span>
 
 
-        <button> Submit </button>
+        <button type="submit"> Submit </button>
 
       </form>
 
