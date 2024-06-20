@@ -38,7 +38,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--primary_color_green_200);
-
+  position: relative;
 }
 
 /*=======================WRAPPER=====================*/
@@ -278,6 +278,44 @@ span{
 display: block;
 }
 
+/*=======================SUCESSMESSAGE=====================*/
+
+.sucessMessage{
+  position: absolute;
+  width: 32rem;
+  height: 10rem;
+  padding: 2rem;
+  background-color: var(--neutral_color_grey);
+  top: 0;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  border-radius: 10px;
+  margin-top: -100px;
+  transition: ease 1s;
+}
+
+.sucessMessage div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sucessMessage h3{
+  color: var(--neutral_color_white);
+  margin-left: 0.6rem;
+  font-weight: 700;
+  
+}
+
+.sucessMessage p{
+  font-size: 1.2rem;
+  color:var(--neutral_color_white);
+}
+
+.MessageAppear{
+  transform: translateY(120px);
+}
 
 /*=======================RESPONSIVITY=====================*/
 @media(max-width:360px){
@@ -348,6 +386,14 @@ justify-content: space-between;
   width: 35rem;
 
 
+}
+
+/*=======================SUCESSMESSAGE=====================*/
+
+.sucessMessage{
+  position: absolute;
+  width: 40rem;
+  height: 10rem;
 }
 
 }
