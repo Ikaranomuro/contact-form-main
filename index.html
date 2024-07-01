@@ -18,7 +18,9 @@
 
 <body>
   <div class="sucessMessage">
-    <div><img src="./assets/images/icon-success-check.svg" alt=""><h3>Message sent!</h3></div>
+    <div><img src="./assets/images/icon-success-check.svg" alt="">
+      <h3>Message sent!</h3>
+    </div>
     <p>Thanks for completing the form. We'll be in touch soon!</p>
   </div>
 
@@ -30,59 +32,61 @@
       <form>
 
         <div class="formField">
-        <div class="nameField">
-          <div>
-            <p> First Name *</p>
-            <input type="text" name="firstName" class="firstName">
-            <span class="errorNameField1">This field is required</span>
-          </div>
-          <div>
-            <p> Last Name *</p>
-            <input type="text" name="lastName" class="secondName">
-            <span class="errorNameField2">This field is required</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="formField">
-        <p>Email Address *</p>
-        <input type="email" name="email" class="email">
-        <span class="errorEmailField">Please enter a valid email address</span>
-        </div>
-
-        <div class="formField">
-        <div class="radio">
-          <p>Query Type *</p>
-          <div class="radioField">
+          <div class="nameField">
             <div>
-              <div class="radioBox"> <input type="radio" name="radio" class="radioGeneralEnrquiry" value="General Enquiry">
-                <label for="paragraphRadio1">General Enquiry </label>
-              </div>
+              <p> First Name *</p>
+              <input type="text" name="firstName" class="firstName">
+              <span class="errorNameField1">This field is required</span>
             </div>
             <div>
-              <div class="radioBox"><input type="radio" name="radio" class="radioSupportRequest" value="Support Request">
-                <label for="paragraphRadio2" class="take">Support Request</label>
-              </div>
+              <p> Last Name *</p>
+              <input type="text" name="lastName" class="secondName">
+              <span class="errorNameField2">This field is required</span>
             </div>
           </div>
-          <span class="errorRadioField">Please select a query type</span>
+        </div>
+
+        <div class="formField">
+          <p>Email Address *</p>
+          <input type="email" name="email" class="email">
+          <span class="errorEmailField">Please enter a valid email address</span>
+        </div>
+
+        <div class="formField">
+          <div class="radio">
+            <p>Query Type *</p>
+            <div class="radioField">
+              <div>
+                <div class="radioBox"> <input type="radio" name="radio" class="radioGeneralEnrquiry"
+                    value="General Enquiry">
+                  <label for="paragraphRadio1">General Enquiry </label>
+                </div>
+              </div>
+              <div>
+                <div class="radioBox"><input type="radio" name="radio" class="radioSupportRequest"
+                    value="Support Request">
+                  <label for="paragraphRadio2" class="take">Support Request</label>
+                </div>
+              </div>
+            </div>
+            <span class="errorRadioField">Please select a query type</span>
           </div>
 
         </div>
 
         <div class="formField">
-        <p>Message *</p>
-        <textarea name="message" class="inputMessage" rows="10" cols="50"></textarea>
-        <span class="errorMessageField">This field is required</span>
-        <br>
+          <p>Message *</p>
+          <textarea name="message" class="inputMessage" rows="10" cols="50"></textarea>
+          <span class="errorMessageField">This field is required</span>
+          <br>
         </div>
 
         <div class="formField">
-        <div class="checkTerm">
-          <input type="checkbox" name="checkTerm" maxlength="2" class="checkbox">
-          <label for="checkTermParagraph">i consent to being contacted by the team *</label>
-        </div>
-        <span class="errorCheckboxField">To submit this form, please consent to being contacted</span>
+          <div class="checkTerm">
+            <input type="checkbox" name="checkTerm" maxlength="2" class="checkbox" id="checkTermParagraph">
+            <label for="checkTermParagraph">i consent to being contacted by the team *</label>
+          </div>
+          <span class="errorCheckboxField">To submit this form, please consent to being contacted</span>
         </div>
 
         <button type="submit"> Submit </button>
